@@ -15,7 +15,7 @@ function search() {
     let val = input.value
     result.innerHTML = ""
     input.value = ""
-    fetch(`http://www.omdbapi.com/?t=${val}&apikey=${key}`)
+    fetch(`https://www.omdbapi.com/?t=${val}&apikey=${key}`)
         .then((val) => {
             return val.json()
         }).then((val) => {
